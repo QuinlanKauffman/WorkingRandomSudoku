@@ -538,8 +538,14 @@ public class Sudoku extends LatinSquare {
 			}
 		}
 		
-		
-		
+	
+		if (minPossVals == 0)
+		{
+			return;
+			//Force exit of method
+			//Not working
+			//Can't figure out why
+		}
 		
 		
 		System.out.println("");
@@ -576,5 +582,5 @@ public class Sudoku extends LatinSquare {
 		}
 		
 	}
-
+ 
 }
