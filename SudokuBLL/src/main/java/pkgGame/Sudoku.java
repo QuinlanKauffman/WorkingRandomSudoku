@@ -511,8 +511,7 @@ public class Sudoku extends LatinSquare {
 					
 					if (countPoss == 0)
 						break;
-						//Only works if add this statement in
-						//DON'T KNOW WHY
+						//Need this break statement if attempt fails
 					
 					if (countPoss == minPossVals)
 					{
@@ -537,7 +536,7 @@ public class Sudoku extends LatinSquare {
 				}
 			}
 		}
-		
+		 
 	
 //		if (minPossVals == 0)
 //		{
