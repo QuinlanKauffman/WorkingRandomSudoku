@@ -509,10 +509,10 @@ public class Sudoku extends LatinSquare {
 						
 					}
 					
-//					if (countPoss == 0)
-//						break;
-//						Only works if add this statement in
-//						DON'T KNOW WHY
+					if (countPoss == 0)
+						break;
+						//Only works if add this statement in
+						//DON'T KNOW WHY
 					
 					if (countPoss == minPossVals)
 					{
