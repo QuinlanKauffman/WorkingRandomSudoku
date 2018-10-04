@@ -509,10 +509,10 @@ public class Sudoku extends LatinSquare {
 						
 					}
 					
-					if (countPoss == 0)
-						break;
-						//Only works if add this statement in
-						//DON'T KNOW WHY
+//					if (countPoss == 0)
+//						break;
+//						Only works if add this statement in
+//						DON'T KNOW WHY
 					
 					if (countPoss == minPossVals)
 					{
@@ -539,13 +539,13 @@ public class Sudoku extends LatinSquare {
 		}
 		
 	
-		if (minPossVals == 0)
-		{
-			return;
-			//Force exit of method
-			//Not working
-			//Can't figure out why
-		}
+//		if (minPossVals == 0)
+//		{
+//			return;
+//			//Force exit of method
+//			//Not working
+//			//Can't figure out why not working
+//		}
 		
 		
 		System.out.println("");
