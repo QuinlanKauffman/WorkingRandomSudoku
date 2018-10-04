@@ -425,6 +425,8 @@ public class Sudoku extends LatinSquare {
 		int[][] myTempSudoku1;
 		int iterations = 1;
 			//Tracking the number of iterations until have working Sudoku puzzle
+		int rowIndex;
+		int colIndex;
 		Creation();
 		
 		while(isSudoku() == false)
@@ -437,13 +439,20 @@ public class Sudoku extends LatinSquare {
 			{
 				for (int j=0;j<iSize;j++)
 				{
-					myTempSudoku1[i][j] = 0;
-					//Need to clear the values in each index and start over
-					//Bypass the try catch method for making a new Sudoku
+					rowIndex = i/iSqrtSize;
+					colIndex = j/iSqrtSize;
+					
+					if (rowIndex != colIndex)
+					{
+						myTempSudoku1[i][j] = 0;
+						//Only changing those values not in a diagonal region
+						//Need to clear the values in each index and start over
+						//Bypass the try catch method for making a new Sudoku
+					}
 				}
 			}
 			super.setLatinSquare(myTempSudoku1);
-			FillDiagonalRegions();
+			//FillDiagonalRegions();
 			Creation();
 			
 		}
